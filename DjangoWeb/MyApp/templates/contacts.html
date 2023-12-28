@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block title %} Home Page {% endblock %}
+{% block content %}
+<div class="form">
+    <h1>Contact Us</h1>
+    <form action="https://formsubmit.co/eepilinekasutaja@gmail.com" method="post">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <label for="subject">Teema:</label>
+        <input type="text" id="subject" name="teema" required placeholder="Subject">
+
+        <label for="message">Sisu:</label>
+        <textarea id="message" name="Sisu" required placeholder="Your Message"></textarea>
+
+        <!-- Anti-spam field -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block title %} Home Page {% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<img src="{% static 'images/ifd.jpeg' %}" alt="White Image" style="margin-left: 50px; margin-top: 20px;">
+<img src="{% static 'images/ifd.jpeg' %}" alt="White Image" class="center">
+<style>
+    .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Style for each paragraph */
+        p {
+            width: 100%; /* Adjust the width as needed #48% */
+            box-sizing: border-box;
+            border: 1px transparent #ccc;
+            padding: 10px;
+        }
+</style>
+<div class="container">
+        <p>text</p>
+        <p>text2</p>
+    </div>
+<div>
+    <p>mkhadfughadöghadng.jkangfnvfda-ngkbnkblgnbglsfngsblknbfl</p>
+    <p>mkhadfughadöghadng.jkangfnvfda-ngkbnkblgnbglsfngsblknbfl</p>
+    <p>mkhadfughadöghadng.jkangfnvfda-ngkbnkblgnbglsfngsblknbfl</p>
+</div>
+<a href="https://www.google.com" target= _blank>
+    Google
+</a>
+<h4>Unordered list</h4>
+<ul>
+    <Li>object 1</Li>
+    <Li>object 2</Li>
+    <li>object 3</li>
+    <Li>object 4</Li>
+    <Li>object 5</Li>
+    <li>object 6</li>
+    <li>object 7</li>
+</ul>
+<a href='http://127.0.0.1:8000/contacts/'>
+    <button style="background-color:grey;"> Contacts</button>
+</a>
+
+{% endblock %}

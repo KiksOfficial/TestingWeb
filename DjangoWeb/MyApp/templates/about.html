@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+         /* Define a grid container */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+      gap: 20px; /* Adjust the gap between items */
+    }
+
+    /* Style for each image */
+    .image-item {
+      width: 100%; /* Ensure images take full width of their container */
+      height: auto; /* Maintain the aspect ratio */
+      border: 1px transparent #ddd; /* Add a border for better visibility (original- solid)*/
+      border-radius: 8px; /* Optional: Add border-radius for a rounded look */
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      color: #fff;
+      text-align: center;
+
+        p {
+            font-family: 'Arial', sans-serif;
+        }
+
+     </style>
+
+
+    <h1 class="center">About Page</h1>
+    <p>Welcome to our awesome website! We are passionate about...</p>
+    <p>adgbjognoablögfbnöglbkm.</p>
+
+<div class="image-grid" >
+    <div class="image-item">
+        <img src="{% static 'images/ifd.jpeg' %}" alt="Image 1" height="300">
+        <p1>text</p1>
+    </div>
+
+    <div class="image-item">
+        <img src="{% static 'images/ifd.jpeg' %}" alt="White Image" height="300">
+        <p1>text</p1>
+    </div>
+
+    <div class="image-item">
+        <img src="{% static 'images/ifd.jpeg' %}" alt="White Image" height="300">
+        <p1>text</p1>
+    </div>
+
+    <div class="image-item">
+        <img src="{% static 'images/ifd.jpeg' %}" alt="image 1" height="300">
+        <p1>text</p1>
+    </div>
+
+</div>
+
+{% endblock %}
+
